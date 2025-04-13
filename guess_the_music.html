@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gtm-style.css">
+    <link rel="icon" href="imagens/foxy-icon.png" type="image/x-icon">
+    <title>FNAFdle - Advinhe a música!</title>
+
+    <script src="gtm-script.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <img class="helpy-dance2" src="imagens/helpy dance2.gif" alt="">
+       <div class="tela-r_correta1" id="a">
+            <iframe width="200" height="200" src="https://youtube.com/embed/dHlpa5utQzQ?si=x9Seh7EyultJi428" frameborder="0" allow="accelerometer"; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
+            <h4 class="parabens">Parabéns!</h4>
+            <h5 class="rsp-correta">Join Us for a Bite (Remix)</h5>
+            <div class="quadradinhos" id="squares">
+                <div class="q1" id="q1"></div>
+                <div class="q2" id="q2"></div>
+                <div class="q3" id="q3"></div>
+                <div class="q4" id="q4"></div>
+            </div>
+            <img class="helpy-happy" src="imagens/helpy dance2.gif" alt="">
+
+
+            <h6 class="txtR" id="txt-result"></h6>
+       
+        </div>
+    
+
+        <div class="caixas" id="caixas">
+            <div class="caixa1" id="caixa1" data-index="1">
+                <div class="i-q1" id="i-q1">
+                    <img src="imagens/quadrado.png" alt="" id="img1">
+                </div>
+            </div>
+            <div class="caixa2" id="caixa2" data-index="2">
+                <div class="i-q2" id="i-q2">
+                    <img src="imagens/quadrado.png" alt="" id="img2">
+                </div>
+            </div>
+            <div class="caixa3"id="caixa3" data-index="3">
+                <div class="i-q3">
+                    <img src="imagens/quadrado.png" alt="" id="img3">
+                </div>
+            </div>
+            <div class="caixa4"id="caixa4" data-index="4">
+                <div class="i-q4">
+                    <img src="imagens/quadrado.png" alt="" id="img4">
+                </div>
+            </div>
+        </div>
+        
+        <button class="buttonp" id="playButton">
+            <img class="bplay" src="imagens/botao-play.png" alt="" id="icone">
+        </button>
+        <div class="skipbuttons">
+            <button class="button" id="skipButton" style=" font-size: 15px;" disabled >Skip +2s</button>
+            <button class="button2" id="skipButton2" style=" font-size: 15px;" disabled >Skip +4s</button>
+            <button class="button3" id="skipButton3" style="font-size: 15px;" disabled >Skip +8s</button>
+        </div>
+
+        <!--trechos musicas-->
+        <div>
+            <audio src="musics/joinus-remix/yt1z (mp3cut.net).mp3" id="audio"></audio>
+            <audio src="musics/joinus-remix/yt1z (mp3cut.net) (1).mp3" id="audio2"></audio>
+            <audio src="musics/joinus-remix/yt1z (mp3cut.net) (2).mp3" id="audio3"></audio>
+            <audio src="musics/joinus-remix/yt1z (mp3cut.net) (3).mp3" id="audio4"></audio>
+            <audio src="musics/joinus-remix/yt1z (mp3cut.net) (3).mp3" id="audio5"></audio>
+        </div>
+
+        <progress class="progressbar" id="barraProgresso" value="0" max="50" style="border: 0px;"></progress>
+
+        <input type="text" onkeyup="mostrarMenu()" class="typebox_resposta" id="typebox" placeholder="Procure a música e selecione seu palpite" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: black;">
+        <button class="enter" id="enter" style="font-family: fonte3, sans-serif; font-size: 15px;" onclick="enviarOpcao()" >Enter</button>
+
+        <div class="musicTimer">
+            <span class="currentTime">00:00</span>
+            <span class="duration">00:00</span>
+        </div>
+
+        <ul id="menu" class="menu">
+        </ul>
+
+        <div class="txt-retangulo1" id="txt-r1">
+            <span></span>
+        </div>
+
+        <div class="txt-retangulo2" id="txt-r2">
+            <span></span>
+        </div>
+
+        <div class="quadradinho2" id="squares2">
+        </div>
+
+        <div class="tela-r_errada" id="aa">
+            <img class="foxy-jumpscare" src="imagens/foxy-jumpscare.gif" alt="">
+            <audio src="sounds/five-nights-at-freddys-2-full-scream-sound (mp3cut.net).mp3" id="foxy-scream"></audio>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
