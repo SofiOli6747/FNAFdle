@@ -206,7 +206,7 @@ body{
     font-family: 'fonte3', sans-serif;
     color: white;
     position: absolute;
-    left: 10px;
+    left: 5px;
     top: 10px;
 }
 
@@ -262,4 +262,17 @@ body{
     height: 700px;
     width: 1500px;
     top: 10px;
+}
+
+.faixa{
+    position: absolute;
+    top: 30px;
+    width: 200px;
+    rotate: 15deg;
+}
+.faixa2{
+    position: absolute;
+    top: 30px;
+    width: 200px;
+    rotate: 15deg;
 }
