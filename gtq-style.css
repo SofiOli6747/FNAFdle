@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'fonte1'; /* Nome da fonte */
+    src: url('Fonts/Five\ Nights\ At\ Freddys.otf.ttf') format('truetype'); /* Caminho para o arquivo OTF */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fonte2';
+    src: url('Fonts/Supernormale\ W00\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fonte3';
+    src: url('Fonts/stalker1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.container-bg{
+    display: inline-block;
+}
+
+.bg{
+    width: 1520px;
+    height: 720px;
+    position: absolute;
+    left: -10px;
+    top: -3px;
+}
+
+.quote{
+    padding: 10px;
+    border: solid 3px white;
+    font-family: 'fonte3',sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 400px;
+    left: 770px;
+    color: aliceblue;
+}
+
+.question{
+    caret-color: white;
+    font-family: 'fonte3', sans-serif;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    color: aliceblue;
+}
+
+.caret{
+    font-size: 30px;
+    font-family: 'fonte3', sans-serif;
+    display: none;
+    top: 315px;
+    left: 990px;
+    position: absolute;
+    color: aliceblue;
+}
+
+.enter{
+    font-size: 20px;
+    font-family: 'fonte3', sans-serif;
+    padding: 5px;
+    border: solid 3.5px white;
+    position: absolute;
+    top: 610px;
+    left: 970px;
+    color: aliceblue;
+}
+.enter:hover{
+    cursor: pointer;
+    color: rgb(216, 215, 215);
+}
+
+
+.menu-container{
+    background-color: transparent;
+    font-family: 'fonte3', sans-serif;
+    color:aliceblue;
+    position: absolute;
+    top: 505px;
+    left: 890px;
+    width: 190px;
+    height: 30px;
+    border: solid 4px white;
+}
+
+.fion{
+    position: absolute;
+    top: 110px;
+    left: 805px;
+    background-color: black;
+}
+
+
+
+
+.menu{
+    position: absolute;
+    display: none;
+    border: solid 2.5px;
+    border-color: #ffffff;
+}
+
+.grupoOpcao {
+
+    margin-bottom: 10px;
+}
+
+.grupoOpcao h4 {
+ 
+    margin: 0;
+    padding: 5px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+}
+
+.grupoOpcao div {
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.grupoOpcao div:hover {
+    background-color: #f9f9f9;
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 890px;
+    top: 530px;
+    padding: 20px;
+    width: 200px;
+    background-color: #2b2b5a;
+    color: white;
+    list-style-type: none;
+}
+
+.tela-r_correta{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 375px;
+    padding: 200px;
+    width: 280px;
+    height: 200px;
+    background-color: rgb(44, 51, 73);
+    transition: all 0.5s ease-in;
+    border: solid 2px;
+    border-color: #ffffff;
+}
+
+.tela-r_errada{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 375px;
+    padding: 200px;
+    width: 280px;
+    height: 200px;
+    background-color: rgb(44, 51, 73);
+    transition: all 0.5s ease-in;
+    border: solid 2px;
+    border-color: #ffffff;
+}
+
+
+.golden{
+    display: none;
+    position: absolute;
+    left: 150px;
+}
+
+
+.player{
+    position: absolute;
+    left: 170px;
+}
+
+.txt_rsp{
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'fonte2', sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+
+.resposta{
+    font-size: 40px;
+    color: #d69148;
+    position: absolute;
+    left: 245px;
+    top: 60px;
+    font-family: 'fonte2', sans-serif;
+}
+
+.animatronic-img{
+    width: 200px;
+    position: absolute;
+    top: 280px;
+    left: 220px;
+}
+
+
+.freddy-icon{
+    width: 50px;
+    position: absolute;
+    top: 530px;
+    left: 450px;
+}
+.freddy-icon:hover{
+    cursor: pointer;
+    background-color: #57281e;
+}
+.local-icon{
+    width: 50px;
+    position: absolute;
+    top: 530px;
+    left: 520px;
+}
+.local-icon:hover{
+    cursor: pointer;
+    background-color: #57281e;
+}
+.music-icon{
+    width: 40px;
+    position: absolute;
+    top: 535px;
+    left: 590px;
+}
+.music-icon:hover{
+    cursor: pointer;
+    background-color: #57281e;
+}

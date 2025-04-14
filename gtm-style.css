@@ -309,7 +309,7 @@ iframe{
     font-size: 20px;
     position: absolute;
     top: 290px;
-    left: 220px;
+    left: 290px;
 }
 
 .quadradinhos{
@@ -406,13 +406,28 @@ iframe{
 
 
 
-.tela-r_errada{
+.jumpscare{
     display: none;
 }
 
 .foxy-jumpscare{
     position: absolute;
     left: 500px;
+}
+
+.tela-r_errada{
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 440px;
+    z-index: 1;
+    padding: 200px;
+    width: 280px;
+    height: 200px;
+    background-color: rgb(64, 71, 71);
+    transition: all 0.5s ease-in;
+    border: solid 2px;
+    border-color: #6b1e1e;
 }
 
 .yt2{
@@ -442,10 +457,48 @@ iframe{
     color: #a8af67;
 }
 
+.helpy-dies{
+    position: absolute;
+    top: -60px;
+    left: 215px;
+    width: 200px;
+}
+
 
 .helpy-dance2{
     width: 100px;
     position: absolute;
     top: 350px;
     left: 690px;
+}
+
+.freddy-icon{
+    width: 70px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+}
+.freddy-icon:hover{
+    cursor: pointer;
+    background-color: #42413a;
+}
+.local-icon{
+    width: 70px;
+    position: absolute;
+    top: 500px;
+    left: 310px;
+}
+.local-icon:hover{
+    cursor: pointer;
+    background-color: #42413a;
+}
+.quote-icon{
+    width: 70px;
+    position: absolute;
+    top: 510px;
+    left: 410px;
+}
+.quote-icon:hover{
+    cursor: pointer;
+    background-color: #42413a;
 }

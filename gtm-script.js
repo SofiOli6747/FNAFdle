@@ -18,29 +18,18 @@ function executarComando(params) {
     }
   }
   
+  let contadorClique = 0;
   
   document.getElementById("playButton").addEventListener('click', function() {
-    let contadorClique = 0;
+
   
     contadorClique++;
     executarComando();
     mudarIcone();
-  
-    if (contadorClique == 1){
-      document.getElementById('skipButton3').disabled = true;
-      document.getElementById('skipButton2').disabled = true;
-      document.getElementById('skipButton').disabled = false;
-      document.getElementById('skipButton3').style.opacity = '40%';
-      document.getElementById('skipButton2').style.opacity = '40%';
-      document.getElementById('skipButton').style.opacity = '100%';
-    }
-    if (contadorClique >= 2 || contadorClique === 2 ){
-      document.getElementById('skipButton3').disabled = true;
-      document.getElementById('skipButton2').disabled = false;
-      document.getElementById('skipButton').disabled = true;
-      document.getElementById('skipButton').style.opacity = '40%';
-      document.getElementById('skipButton2').style.opacity = '100%';
-    }
+
+    document.getElementById('skipButton').disabled = false;
+    document.getElementById('skipButton').style.opacity = '100%';
+
   
   
   });
@@ -51,7 +40,7 @@ function executarComando(params) {
   const audio = document.getElementById('audio');
   
   audio.addEventListener('timeupdate', function() {
-    const progresso = (audio.currentTime / audio.duration) *70;
+    const progresso = (audio.currentTime / audio.duration) * 70;
     barraProgresso.value = progresso;
     barraProgresso.style.width = audio.duration;
   });
@@ -300,7 +289,7 @@ function executarComando(params) {
   const txt_r1 = document.getElementById('txt-r1');
   const txt_r2 = document.getElementById('txt-r2');
   
-  const opcaoCorreta = 'Join Us for a Bite (Remix)';
+  const opcaoCorreta = 'Follow Me';
   
   let opcaoSelecionada = "";
   
@@ -496,12 +485,17 @@ const opcoes = [
       document.getElementById("caixa" + contador).innerHTML += valorSelecionado;
     } 
   
-    if (contador >= 4 && document.getElementById("caixa4").innerHTML !== valorSelecionado) {
-      const telaFracasso = document.getElementById('aa');
+    if (contador === 4 && (document.getElementById("caixa4").innerHTML !== valorSelecionado)) {
+      const rsp_errada = document.getElementById('aa');
       const jumpscare = document.getElementById("foxy-scream");
-      telaFracasso.style.display = 'block';
+      rsp_errada.style.display = 'block';
       jumpscare.play();
   }
+  const jumpscare = document.getElementById("foxy-scream");
+    jumpscare.onended = function(){
+      const telaFracasso = document.getElementById('aaa')
+      telaFracasso.style.display = 'block';
+    }
 
   }
   function mostrarOpcao2()  {
@@ -514,8 +508,8 @@ const opcoes = [
   }
   function mostrarOpcao3(params) {
     if(contador >= 4 && (document.getElementById("caixa" + contador).innerHTML += 'Skipped')){
-      const telaFracasso = document.getElementById('aa');
-      telaFracasso.style.display = 'block';
+      const rsp_errada = document.getElementById('aa');
+      rsp_errada.style.display = 'block';
 
     
     }
@@ -529,13 +523,35 @@ const opcoes = [
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-      const telaFracasso = document.getElementById('aa');
-      telaFracasso.style.display = 'none';
+      const rsp_errada = document.getElementById('aa');
+      rsp_errada.style.display = 'none';
       exibirTelaDeSucesso();
+      const yaaay = document.getElementById('yaaay');
+      yaaay.play();
     } else {
         document.getElementById('img' + contador).src = 'imagens/x.png';
     }
   
   }
 
+
+  document.getElementById("icon3").addEventListener('click', function() {
+    window.location.href = "guess_the_quote.html"
+  })
+  
+  document.getElementById("icon3.1").addEventListener('click', function() {
+    window.location.href = "guess_the_quote.html"
+  })
+  document.getElementById("icon2").addEventListener('click', function() {
+    window.location.href = "guess_t_place.html"
+  })
+  document.getElementById("icon2.1").addEventListener('click', function() {
+    window.location.href = "guess_t_place.html"
+  })
+  document.getElementById("icon1").addEventListener('click', function() {
+    window.location.href = "guess_t_character.html"
+  })
+  document.getElementById("icon1.1").addEventListener('click', function() {
+    window.location.href = "guess_t_character.html"
+  })
 

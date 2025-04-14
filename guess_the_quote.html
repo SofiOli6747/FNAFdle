@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gtq-style.css">
+    <link rel="icon" href="imagens/foxy-icon.png" type="image/x-icon">
+    <title>FNAFdle - Advinhe de quem é a frase!</title>
+
+    <script src="gtq-script.js" defer></script>
+</head>
+<body>
+
+    <header>
+
+    </header>
+    <main>
+        <div class="container-bg">
+            <img class="bg" src="imagens/escritorio fnaf6.png" alt="">
+            <h2 class="question">De quem é a frase?</h2>
+            <span class="caret" id="caret">_</span>
+            <h4 class="quote">"Don't you hate getting killed by obscure secondary characters?"</h4>
+            <span class="enter" id="enter" onclick="enviarOpcao()">Guess</span>
+            <input class="menu-container" onkeyup="mostrarMenu()" type="text" name="" id="typebox" placeholder="Choose(only one chance)">
+
+            <ul class="menu" id="menu">
+            </ul>
+
+            <button id="fion" class="fion"></button>
+            <audio id="boop" src="sounds/partyfavorraspypart_ac01_3_5HTQ8CW.mp3"></audio>
+
+            <div class="tela-r_correta" id="a">
+                <audio id="yaaay" src="sounds/kids-saying-yay-sound-effect_3.mp3"></audio>
+                <div class="player">
+                    <audio controls src="sounds/Nedd Bear _ All Voicelines with Subtitles _ Ultimate Custom Night-yt (mp3cut.net).mp3"></audio>
+                </div>
+                <h4 class="txt_rsp">Resposta:</h4>
+                <h5 class="resposta">Nedd Bear</h5>
+                <img class="animatronic-img" src="imagens/nedd_bear.png" alt="">
+
+                <div class="icons">
+                    <img id="icon1" class="freddy-icon" src="imagens/freddy.png" alt="">
+                    <img id="icon2" class="local-icon" src="imagens/localização.png" alt="">
+                    <img id="icon3" class="music-icon" src="imagens/R.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="jumpscare" id="jumpscare">
+                <audio id="jumps-golden" src="sounds/full-golden-freddy-scream.mp3"></audio>
+                <img id="golden" class="golden" src="imagens/cabeça-golden freddy.png" alt="">
+            </div>
+            <div class="tela-r_errada" id="aa">
+                <div class="player">
+                    <audio controls src="sounds/Nedd Bear _ All Voicelines with Subtitles _ Ultimate Custom Night-yt (mp3cut.net).mp3"></audio>
+                </div>
+                <h4 class="txt_rsp">Resposta:</h4>
+                <h5 class="resposta">Nedd Bear</h5>
+                <img class="animatronic-img" src="imagens/nedd_bear.png" alt="">
+
+                <div class="icons">
+                    <img id="icon1" class="freddy-icon" src="imagens/freddy.png" alt="">
+                    <img id="icon2" class="local-icon" src="imagens/localização.png" alt="">
+                    <img id="icon3" class="music-icon" src="imagens/R.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>

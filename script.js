@@ -21,4 +21,22 @@ function selectGame1(params) {
     }, 2500);
     
 }
+function selectGame2(params) {
+    setTimeout(() => {
+        window.location.href="guess_t_place.html" 
+    }, 2500);
+    
+}
+function selectGame3(params) {
+    setTimeout(() => {       
+        window.location.href="guess_the_quote.html"
+    }, 2500);
+    
+}
+function selectGame4(params) {
+    setTimeout(() => {
+        window.location.href="guess_t_character.html" 
+    }, 2500);
+    
+}
 
