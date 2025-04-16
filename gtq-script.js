@@ -16,7 +16,7 @@ setInterval(() => {
 
 
 
-const opcaoCorreta = 'Nightmare Freddy';
+const opcaoCorreta = 'Scrap Baby';
   
 let opcaoSelecionada = "";
 

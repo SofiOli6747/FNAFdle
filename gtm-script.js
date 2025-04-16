@@ -289,7 +289,7 @@ function executarComando(params) {
   const txt_r1 = document.getElementById('txt-r1');
   const txt_r2 = document.getElementById('txt-r2');
   
-  const opcaoCorreta = "I Can't Fix You - SL";
+  const opcaoCorreta = "This Comes From Inside";
   
   let opcaoSelecionada = "";
   
@@ -359,7 +359,9 @@ const opcoes = [
 
 "FNaF: Movie Soundtrack (2023)",
 
-"I Can't Fix You - SL"
+"I Can't Fix You - SL",
+
+"This Comes From Inside"
 
 ];
     
@@ -487,7 +489,7 @@ const opcoes = [
       document.getElementById("caixa" + contador).innerHTML += valorSelecionado;
     } 
   
-    if (contador === 4 && (document.getElementById("caixa4").innerHTML !== valorSelecionado)) {
+    if (contador === 4 && (document.getElementById("caixa4").textContent.replace(/\s+/g, ' ').trim() !== valorSelecionado)) {
       const rsp_errada = document.getElementById('aa');
       const jumpscare = document.getElementById("foxy-scream");
       rsp_errada.style.display = 'block';

@@ -37,29 +37,28 @@ body{
     height: 800px;
     position: absolute;
     left: 370px;
+    top: 1px;
 }
+
+
 
 .img1{
     position: absolute;
-    left: 400px;
-    width: 750px;
+    left: 590px;
 }
 .img2{
     position: absolute;
-    left: 400px;
-    width: 750px;
+    left: 590px;
 }
-
 .img3{
     position: absolute;
-    left: 400px;
-    width: 750px;
-}
+    left: 590px;
 
+}
 .img4{
     position: absolute;
-    left: 400px;
-    width: 750px;
+    left: 590px;
+
 }
 
 
@@ -286,21 +285,26 @@ ul{
     z-index: 1;
 }
 
-.parrot{
+.oldman{
     display: none;
-    width: 60px;
     position: absolute;
-    top: 350px;
-    animation: moverImagem 10s ease-in-out;
+    top: 200px;
+    left: 560px;
 }
-.parrot:hover{
-    cursor: pointer;
+
+.oldman-fish{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 560px;
+    animation: moverImagem 3s infinite ease-in-out;
 }
 
 @keyframes moverImagem {
-    from { transform: translateX(0); }
-    to { transform: translateX(1600px); }
+    0% { transform: translateX(0); }
+    50% { transform: translateX(200px); }
 }
+
 
 .select-next{
     display: none;
@@ -324,6 +328,7 @@ ul{
 .freddy-icon:hover{
     cursor: pointer;
     background-color: #42413a;
+    width: 70px;
 }
 .local-icon{
     width: 40px;
@@ -334,6 +339,7 @@ ul{
 .local-icon:hover{
     cursor: pointer;
     background-color: #42413a;
+    width: 50px;
 }
 .quote-icon{
     width: 60px;
@@ -344,6 +350,7 @@ ul{
 .quote-icon:hover{
     cursor: pointer;
     background-color: #42413a;
+    width: 70px;
 }
 
 
@@ -353,4 +360,12 @@ ul{
     top: 100px;
     left: 300px;
     width: 1000px;
+}
+
+.mangle{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left:  480px;
+    z-index: 1;
 }

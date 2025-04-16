@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Pirate Cove (FNAF 1)';
+const opcaoCorreta = 'Back alley (FNAF6)';
   
 let opcaoSelecionada = "";
 
@@ -133,7 +133,7 @@ function mostrarOpcao(tipoBotao) {
       document.getElementById("caixa" + contador).style.backgroundColor = 'red';
     } 
     
-    if (contador === 4 && (document.getElementById("caixa4").innerHTML !== valorSelecionado)) {
+    if (contador === 4 && (document.getElementById("caixa4").textContent.replace(/\s+/g, ' ').trim() !== valorSelecionado)) {
         const foxy_js_sound = document.getElementById('js6');
         foxy_js_sound.play();
         const foxy_js = document.getElementById('foxy');
@@ -142,7 +142,7 @@ function mostrarOpcao(tipoBotao) {
 
   }
 
-const imgs = [ 'imagens/pirate-cove(2).jpg', 'imagens/pirate-cove(1).jpg', 'imagens/pirate-cove(3).jpg', 'imagens/pirate-cove.jpg'
+const imgs = [ 'imagens/fnaf places/Captura de tela 2025-04-16 13475 (2).png, imagens/fnaf places/Captura de tela 2025-04-16 13475.png, imagens/fnaf places/Captura de tela 2025-04-16 13475 (1).png, imagens/fnaf places/back alley.png'
 ]
 function enviarOpcao(params) {
     mostrarOpcao();
@@ -150,6 +150,8 @@ function enviarOpcao(params) {
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
+        document.getElementById('img' + contador).src = 'imagens/fnaf places/back alley.png'
+
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       
       const tela_r_correta = document.getElementById("a");
@@ -187,7 +189,9 @@ document.getElementById("parrot").addEventListener('click', function(){
 
 function show_parrot(params) {
     const parrot = document.getElementById("parrot")
+    const raah = document.getElementById("raah")
     parrot.style.display = 'block';
+    raah.play();
 
     verificarSaida();
 }
@@ -208,8 +212,25 @@ function verificarSaida() {
         
         
     }
+    const foxy_js_sound = document.getElementById('js6');
+    foxy_js_sound.onended = function(){
+        const foxy_js = document.getElementById('foxy');
+        foxy_js.style.display = 'none'
+        const next = document.getElementById("next")
+        next.style.display = 'block';
+    }
 }
 
 document.getElementById("a").addEventListener('click', function(){
     verificarSaida();
 })
+
+document.getElementById("icon3").addEventListener('click', function() {
+    window.location.href = "guess_the_quote.html"
+  })
+  document.getElementById("icon2").addEventListener('click', function() {
+    window.location.href = "guess_the_music.html"
+  })
+  document.getElementById("icon1").addEventListener('click', function() {
+    window.location.href = "guess_t_character.html"
+  })
