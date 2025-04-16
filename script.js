@@ -23,7 +23,7 @@ function selectGame1(params) {
 }
 function selectGame2(params) {
     setTimeout(() => {
-        window.location.href="guess_t_place.html" 
+        window.location.href="guess_t_character.html" 
     }, 2500);
     
 }
@@ -35,7 +35,7 @@ function selectGame3(params) {
 }
 function selectGame4(params) {
     setTimeout(() => {
-        window.location.href="guess_t_character.html" 
+        window.location.href="guess_t_place.html" 
     }, 2500);
     
 }

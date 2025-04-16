@@ -41,7 +41,7 @@ body{
     font-size: 15px;
     position: absolute;
     top: 400px;
-    left: 770px;
+    left: 880px;
     color: aliceblue;
 }
 
@@ -198,9 +198,9 @@ ul{
 
 .resposta{
     font-size: 40px;
-    color: #d69148;
+    color: #321d18;
     position: absolute;
-    left: 245px;
+    left: 200px;
     top: 60px;
     font-family: 'fonte2', sans-serif;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gtp-style.css">
+    <link rel="icon" href="imagens/foxy-icon.png" type="image/x-icon">
+    <title>FNAFdle - Advinhe o lugar de Fnaf!</title>
+
+    <script src="qtp-script.js" defer ></script>
+
+</head>
+<body>
+    <header >
+    </header>
+    <main>
+        <div class="fundo"></div>
+        <img id="img4" class="img4" src="imagens/pirate-cove.jpg" alt="">
+        <img id="img3" class="img3" src="imagens/pirate-cove (3).jpg" alt="">
+        <img id="img2" class="img2" src="imagens/pirate-cove (2).jpg" alt="">
+        <img id="img1" class="img1" src="imagens/pirate-cove (1).jpg" alt="">
+
+        <span class="hehe" onclick="jumpscare()">I'ts Me</span>
+        <img id="golden" class="golden" src="imagens/cabeça-golden freddy.png" alt="">
+        <audio id="golden_js" src="sounds/full-golden-freddy-scream (mp3cut.net) (1).mp3"></audio>
+        
+        <input class="typebox_r" type="text" name="" id="typebox" onkeyup="mostrarMenu()">
+        <button class="enter" id="enter" onclick="enviarOpcao()">Guess</button>
+
+        <div class="caixas" id="caixas">
+            <div class="caixa1" id="caixa1" data-index="1">
+                <div class="i-q1" id="i-q1">
+                </div>
+            </div>
+            <div class="caixa2" id="caixa2" data-index="2">
+                <div class="i-q2" id="i-q2">
+                </div>
+            </div>
+            <div class="caixa3"id="caixa3" data-index="3">
+                <div class="i-q3">
+                </div>
+            </div>
+            <div class="caixa4"id="caixa4" data-index="4">
+                <div class="i-q4">
+                </div>
+            </div>
+        </div>
+
+        <ul id="menu" class="menu">
+        </ul>
+
+        <div class="telaR_correta" id="a"  onclick="show_parrot()">
+            <span id="parabens" class="parabens">Parabéns!</span>
+            <img class="helpy" src="imagens/helpy dançando.gif" alt="">
+            <img class="helpy2" src="imagens/helpy dançando.gif" alt="">
+            <audio id="yaaay" src="sounds/kids-saying-yay-sound-effect_3.mp3"></audio>
+            <img class="confetti1" src="imagens/confetti-25.gif" alt="">
+            <img class="confetti2" src="imagens/confetti-25.gif" alt="">
+        </div>
+        <img id="parrot" class="parrot" src="imagens/parrot-unscreen.gif" alt="">
+
+        <div id="next" class="select-next">
+            <img id="icon1" class="freddy-icon" src="imagens/freddy.png" alt="">
+            <img id="icon2" class="local-icon" src="imagens/R.png" alt="">
+            <img id="icon3" class="quote-icon" src="imagens/quote.png" alt="">
+        </div>
+        <div id="aa" class="telaR_errada">
+            <img id="foxy" class="foxy" src="imagens/Tenor-unscreen.gif" alt="">
+            <audio  id="js6" src="sounds/fnaf-6-scream.mp3"></audio>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

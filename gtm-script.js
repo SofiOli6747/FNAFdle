@@ -289,7 +289,7 @@ function executarComando(params) {
   const txt_r1 = document.getElementById('txt-r1');
   const txt_r2 = document.getElementById('txt-r2');
   
-  const opcaoCorreta = 'Follow Me';
+  const opcaoCorreta = "I Can't Fix You - SL";
   
   let opcaoSelecionada = "";
   
@@ -357,7 +357,9 @@ const opcoes = [
 
 "Security Breach Official Soundtrack",
 
-"FNaF: Movie Soundtrack (2023)"
+"FNaF: Movie Soundtrack (2023)",
+
+"I Can't Fix You - SL"
 
 ];
     

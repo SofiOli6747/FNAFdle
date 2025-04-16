@@ -81,7 +81,9 @@ body{
 }
 
 
-
+progress::-webkit-progress-value{
+    background-color: #6b1e1e;
+}
 
 
 .progressbar{
@@ -309,7 +311,7 @@ iframe{
     font-size: 20px;
     position: absolute;
     top: 290px;
-    left: 290px;
+    left: 270px;
 }
 
 .quadradinhos{

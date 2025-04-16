@@ -16,7 +16,7 @@ setInterval(() => {
 
 
 
-const opcaoCorreta = 'Nedd Bear';
+const opcaoCorreta = 'Nightmare Freddy';
   
 let opcaoSelecionada = "";
 
@@ -24,7 +24,39 @@ function mostrarMenu() {
 
 
 const opcoes = [
-    "Freddy Fazbear", "Bonnie", "Chica", "Foxy", "Golden Freddy", "Toy Freddy", "Toy Bonnie", "Toy Chica", "Withered Freddy", "Withered Bonnie", "Withered Chica", "Withered Foxy", "Mangle", "Balloon Boy (BB)", "Balloon Girl (JJ)", "The Puppet", "Phantom Freddy", "Phantom Chica", "Phantom Foxy", "Phantom BB", "Phantom Mangle", "Phantom Puppet", "Springtrap", "Nightmare Freddy", "Nightmare Bonnie", "Nightmare Chica", "Nightmare Foxy", "Nightmare Fredbear", "Nightmare", "Plushtrap", "Nightmare Mangle", "Nightmare Balloon Boy", "Nightmarionne", "Jack-O-Bonnie", "Jack-O-Chica", "Funtime Freddy", "Funtime Foxy", "Ballora", "Circus Baby", "Ennard", "Bon-Bon", "Bonnet", "Minireena", "Bidybab", "Rockstar Freddy", "Rockstar Bonnie", "Rockstar Chica", "Rockstar Foxy", "Lefty", "Molten Freddy", "Scrap Baby", "Scraptrap", "Nedd Bear", "Orville Elephant", "Happy Frog", "Mr. Hippo", "Candy Cadet", "Glamrock Freddy", "Glamrock Chica", "Montgomery Gator", "Roxanne Wolf", "DJ Music Man", "The Daycare Attendant (Sun/Moon)"
+    "Freddy Fazbear",
+     "Bonnie",
+      "Chica", 
+      "Foxy",
+       "Golden Freddy", 
+       "Toy Freddy",
+        "Toy Bonnie",
+         "Toy Chica",
+          "Withered Freddy",
+           "Withered Bonnie",
+            "Withered Chica",
+             "Withered Foxy",
+              "Mangle",
+               "Balloon Boy (BB)",
+                "Balloon Girl (JJ)", 
+                "The Puppet",
+                 "Phantom Freddy", 
+                 "Phantom Chica", 
+                 "Phantom Foxy", 
+                 "Phantom BB", 
+                 "Phantom Mangle",
+                  "Phantom Puppet"
+                  , "Springtrap", 
+                  "Nightmare Freddy",
+                   "Nightmare Bonnie",
+                    "Nightmare Chica",
+                     "Nightmare Foxy",
+                      "Nightmare Fredbear",
+                       "Nightmare", 
+                       "Plushtrap", 
+                       "Nightmare Mangle",
+                        "Nightmare Balloon Boy",
+                         "Nightmarionne", "Jack-O-Bonnie", "Jack-O-Chica", "Funtime Freddy", "Funtime Foxy", "Ballora", "Circus Baby", "Ennard", "Bon-Bon", "Bonnet", "Minireena", "Bidybab", "Rockstar Freddy", "Rockstar Bonnie", "Rockstar Chica", "Rockstar Foxy", "Lefty", "Molten Freddy", "Scrap Baby", "Scraptrap", "Nedd Bear", "Orville Elephant", "Happy Frog", "Mr. Hippo", "Candy Cadet", "Glamrock Freddy", "Glamrock Chica", "Montgomery Gator", "Roxanne Wolf", "DJ Music Man", "The Daycare Attendant (Sun/Moon)"
 
 ];
   
