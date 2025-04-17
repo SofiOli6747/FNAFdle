@@ -18,6 +18,8 @@
 }
 
 body{
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
+    cursor:  url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--pointer--SweezyCursors.png"), pointer;
     background: repeating-linear-gradient(
     0deg,
     #44433f,
@@ -66,7 +68,7 @@ body{
     top: 200px;
 }
 .selectg-1:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: rgb(92, 99, 99);
 }
 .selectg-2{
@@ -80,7 +82,7 @@ body{
     top: 300px;
 }
 .selectg-2:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: rgb(92, 99, 99);
 }
 .selectg-3{
@@ -94,7 +96,7 @@ body{
     top: 350px;
 }
 .selectg-3:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: rgb(92, 99, 99);
 }
 .selectg-4{
@@ -108,7 +110,7 @@ body{
     top: 550px;
 }
 .selectg-4:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: rgb(92, 99, 99);
 }
 

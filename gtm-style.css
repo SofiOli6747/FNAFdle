@@ -17,8 +17,13 @@
     font-style: normal;
 }
 
+*{
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--pointer--SweezyCursors.png"), auto; 
+}
 
 body{
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
+    cursor:  url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--pointer--SweezyCursors.png"), pointer;
     font-family: "fonte3", sans-serif;
     background: repeating-linear-gradient(
     0deg,
@@ -102,7 +107,7 @@ progress::-webkit-progress-value{
 
 .buttonp{
     all: unset;
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     border: none;
     height: 0px;
     width: 0px;
@@ -155,7 +160,7 @@ progress::-webkit-progress-value{
 
 .enter:hover{
     background-color: rgb(231, 231, 150);
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
 }
 
 
@@ -169,7 +174,7 @@ progress::-webkit-progress-value{
 .button2{
     font-family: 'fonte3',sans-serif;
     width: 70px;
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     position: absolute;
     top: 15px;
     left: 100px;
@@ -182,7 +187,7 @@ progress::-webkit-progress-value{
 .button3{
     font-family: 'fonte3',sans-serif;
     width: 70px;
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     position: absolute;
     top: 15px;
     left: 190px;
@@ -195,7 +200,7 @@ progress::-webkit-progress-value{
 .button{
     font-family: 'fonte3',sans-serif;
     width: 70px;
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     position: absolute;
     top: 15px;
     left: 10px;
@@ -206,7 +211,7 @@ progress::-webkit-progress-value{
 
 
 .skipbuttons:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
 }
 
 
@@ -253,7 +258,7 @@ progress::-webkit-progress-value{
 
 .grupoOpcao div {
     padding: 5px;
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     display: block;
 }
 
@@ -481,7 +486,7 @@ iframe{
     left: 200px;
 }
 .freddy-icon:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: #42413a;
 }
 .local-icon{
@@ -491,7 +496,7 @@ iframe{
     left: 310px;
 }
 .local-icon:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: #42413a;
 }
 .quote-icon{
@@ -501,6 +506,6 @@ iframe{
     left: 410px;
 }
 .quote-icon:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: #42413a;
 }

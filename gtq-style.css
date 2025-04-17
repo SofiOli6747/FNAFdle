@@ -18,6 +18,8 @@
 }
 
 body{
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
+    cursor:  url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--pointer--SweezyCursors.png"), pointer;
     background-color: black;
     
 }
@@ -75,7 +77,7 @@ body{
     color: aliceblue;
 }
 .enter:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     color: rgb(216, 215, 215);
 }
 
@@ -93,6 +95,7 @@ body{
 }
 
 .fion{
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     position: absolute;
     top: 110px;
     left: 805px;
@@ -220,7 +223,7 @@ ul{
     left: 450px;
 }
 .freddy-icon:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: #57281e;
 }
 .local-icon{
@@ -230,7 +233,7 @@ ul{
     left: 520px;
 }
 .local-icon:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: #57281e;
 }
 .music-icon{
@@ -240,6 +243,6 @@ ul{
     left: 590px;
 }
 .music-icon:hover{
-    cursor: pointer;
+    cursor: url("FNaF\ Freddy\ Fazbear\ &\ Mic\ Animated--cursor--SweezyCursors.png"), auto;
     background-color: #57281e;
 }
