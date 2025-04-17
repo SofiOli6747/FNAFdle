@@ -16,7 +16,7 @@ setInterval(() => {
 
 
 
-const opcaoCorreta = 'Scrap Baby';
+const opcaoCorreta = 'Mr. Hippo';
   
 let opcaoSelecionada = "";
 
@@ -155,9 +155,18 @@ function enviarOpcao(params) {
 document.getElementById("icon3").addEventListener('click', function() {
     window.location.href = "guess_the_music.html"
   })
+  document.getElementById("icon3.1").addEventListener('click', function() {
+    window.location.href = "guess_the_music.html"
+  })
   document.getElementById("icon2").addEventListener('click', function() {
     window.location.href = "guess_t_place.html"
   })
+  document.getElementById("icon2.1").addEventListener('click', function() {
+    window.location.href = "guess_the_music.html"
+  })
   document.getElementById("icon1").addEventListener('click', function() {
     window.location.href = "guess_t_character.html"
+  })
+  document.getElementById("icon3.1").addEventListener('click', function() {
+    window.location.href = "guess_the_music.html"
   })

@@ -44,21 +44,24 @@ body{
 
 .img1{
     position: absolute;
-    left: 590px;
+    left: 430px;
+    width: 700px;
 }
 .img2{
     position: absolute;
-    left: 590px;
+    left: 430px;
+    width: 700px;
 }
 .img3{
     position: absolute;
-    left: 590px;
+    left: 430px;
+    width: 700px;
 
 }
 .img4{
     position: absolute;
-    left: 590px;
-
+    left: 430px;
+    width: 700px;
 }
 
 
@@ -315,6 +318,7 @@ ul{
     top: 400px;
     left: 600px;
     border-radius: 2px;
+    border: solid 5px rgb(54, 50, 50);
 }
 
 
@@ -368,4 +372,19 @@ ul{
     top: 10px;
     left:  480px;
     z-index: 1;
+}
+
+
+.txt1{
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left: 580px;
+}
+
+.txt2{
+    font-size: 10px;
+    position: absolute;
+    top: 300px;
+    left: 650px;
 }

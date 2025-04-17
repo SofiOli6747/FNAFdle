@@ -289,7 +289,7 @@ function executarComando(params) {
   const txt_r1 = document.getElementById('txt-r1');
   const txt_r2 = document.getElementById('txt-r2');
   
-  const opcaoCorreta = "This Comes From Inside";
+  const opcaoCorreta = "Like It Or Not";
   
   let opcaoSelecionada = "";
   
@@ -361,7 +361,9 @@ const opcoes = [
 
 "I Can't Fix You - SL",
 
-"This Comes From Inside"
+"This Comes From Inside",
+
+"Like It Or Not"
 
 ];
     
@@ -489,7 +491,7 @@ const opcoes = [
       document.getElementById("caixa" + contador).innerHTML += valorSelecionado;
     } 
   
-    if (contador === 4 && (document.getElementById("caixa4").textContent.replace(/\s+/g, ' ').trim() !== valorSelecionado)) {
+    if (contador === 4 && valorSelecionado !== opcaoCorreta) {
       const rsp_errada = document.getElementById('aa');
       const jumpscare = document.getElementById("foxy-scream");
       rsp_errada.style.display = 'block';

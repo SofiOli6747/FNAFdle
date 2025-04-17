@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Glamrock Chica';
+const opcaoCorreta = 'Candy Cadet';
   
 let opcaoSelecionada = "";
 
@@ -140,11 +140,14 @@ function mostrarOpcao(tipoBotao) {
       document.getElementById("caixa" + contador).style.backgroundColor = 'red';
     } 
     
-    if (contador === 4 && (document.getElementById("caixa4").textContent.replace(/\s+/g, ' ').trim() !== valorSelecionado)) {
+    if (contador === 4 && valorSelecionado !== opcaoCorreta) {
+        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/maxresdefault.jpg'
         const mangle_js_sound = document.getElementById('mangle_scream');
         mangle_js_sound.play();
         const mangle_js = document.getElementById('mangle');
         mangle_js.style.display = 'block'
+        const next = document.getElementById("next")
+        next.style.display = 'block';
     }
     console.log(valorSelecionado)
     console.log(document.getElementById("caixa4").textContent)
@@ -152,7 +155,7 @@ function mostrarOpcao(tipoBotao) {
   }
 
 
-const imgs = [ 'imagens/animatronics_guessthecharacter/Captura de tela 2025-04-16 14243.png,imagens/animatronics_guessthecharacter/Captura de tela 2025-04-16 14243 (1).png, imagens/animatronics_guessthecharacter/Captura de tela 2025-04-16 14243 (2).png, imagens/animatronics_guessthecharacter/glamrock chica.png'
+const imgs = ['imagens/animatronics_guessthecharacter/maxresdefault.jpg, imagens/animatronics_guessthecharacter/maxresdefault (3).jpg, imagens/animatronics_guessthecharacter/maxresdefault (2).jpg, imagens/animatronics_guessthecharacter/maxresdefault (1).jpg'
 ]
 function enviarOpcao(params) {
     mostrarOpcao();
@@ -160,7 +163,7 @@ function enviarOpcao(params) {
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/glamrock chica.png'
+        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/maxresdefault.jpg'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       

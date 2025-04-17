@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Back alley (FNAF6)';
+const opcaoCorreta = 'Breaker Room';
   
 let opcaoSelecionada = "";
 
@@ -119,7 +119,7 @@ const opcoes = [
 const A = document.getElementById("enter").addEventListener('click', function() { });
 
 let contador = 0;
-
+let contador2 = 1;
 
 function mostrarOpcao(tipoBotao) {
     const inputTexto = document.getElementById('typebox');
@@ -129,28 +129,88 @@ function mostrarOpcao(tipoBotao) {
     const valorSelecionado = select;
   
     if (tipoBotao === A){
-      document.getElementById("caixa" + contador).innerHTML += valorSelecionado;
-      document.getElementById("caixa" + contador).style.backgroundColor = 'red';
+        document.getElementById("caixa" + contador).textContent += valorSelecionado;
+        document.getElementById("caixa" + contador).style.backgroundColor = 'red';
     } 
     
-    if (contador === 4 && (document.getElementById("caixa4").textContent.replace(/\s+/g, ' ').trim() !== valorSelecionado)) {
-        const foxy_js_sound = document.getElementById('js6');
-        foxy_js_sound.play();
-        const foxy_js = document.getElementById('foxy');
-        foxy_js.style.display = 'block'
+    if (contador === 4 && valorSelecionado !== opcaoCorreta) {
+        let estilosOriginais = new Map();
+        document.querySelectorAll("*").forEach(elemento => {
+            estilosOriginais.set(elemento, {
+                backgroundColor: elemento.style.backgroundColor,
+                color: elemento.style.color
+            });
+
+            elemento.style.backgroundColor = "#000000"; // Azul
+            elemento.style.color = "black";
+        });
+        const next = document.getElementById("next")
+        next.style.display = 'none';
+        setTimeout(() => {
+            const tela_r_errada = document.getElementById('aa');
+            tela_r_errada.style.display = 'block'
+            const freddy = document.getElementById('aaa');
+            freddy.play();
+            const music_box = document.getElementById('music-box-freddy');
+            music_box.play();
+        }, 3000);
+
+        const caixas = document.getElementById('caixas');
+        caixas.style.display = 'none';
+        const typebox = document.getElementById('typebox');
+        typebox.style.display = 'none';
+        const enter = document.getElementById('enter');
+        enter.style.display = 'none';
+
+        const music_box = document.getElementById('music-box-freddy');
+        music_box.onended = function() {
+            const tela_r_errada = document.getElementById('aa');
+            tela_r_errada.style.display = 'none'
+            setTimeout(() => {
+                const js_freddy = document.getElementById('freddy_js');
+                js_freddy.style.display = 'block'
+                const js_sound = document.getElementById("js_sound");
+                js_sound.play();
+            }, 2000);
+        }
+        const js_sound = document.getElementById("js_sound");
+        js_sound.onended = function() {
+            const js_freddy = document.getElementById('freddy_js');
+            js_freddy.style.display = 'none'
+            const next = document.getElementById("next")
+            next.style.display = 'block';
+            function restaurarCores() {
+                estilosOriginais.forEach((valores, elemento) => {
+                    elemento.style.backgroundColor = valores.backgroundColor;
+                    elemento.style.color = valores.color;
+                });
+            }
+            restaurarCores();
+            
+        }
+
     }
 
   }
 
-const imgs = [ 'imagens/fnaf places/Captura de tela 2025-04-16 13475 (2).png, imagens/fnaf places/Captura de tela 2025-04-16 13475.png, imagens/fnaf places/Captura de tela 2025-04-16 13475 (1).png, imagens/fnaf places/back alley.png'
-]
+
+
+//const imgs = [
+    'imagens/fnaf places/Captura de tela 2025-04-16 19534 (1)a.png', 
+    'imagens/fnaf places/Captura de tela 2025-04-16 19534 (2).png', 
+    'imagens/fnaf places/Captura de tela 2025-04-16 19534 (3).png'
+//]
+
 function enviarOpcao(params) {
     mostrarOpcao();
+
+    const aaaaa = document.getElementById('img' + contador).getBoundingClientRect()
+    console.log(aaaaa);
   
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/fnaf places/back alley.png'
+        document.getElementById('img' + contador).src = 'imagens/fnaf places/Captura de tela 2025-04-16 195347.png'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       
@@ -160,7 +220,8 @@ function enviarOpcao(params) {
       const yaaay = document.getElementById('yaaay');
       yaaay.play();
     } else {
-        document.getElementById('img' + contador).src = imgs;
+        //document.getElementById('img' + contador).src = imgs;
+        document.getElementById('img' + contador).style.display = 'none';
     }
   
   }
@@ -234,3 +295,4 @@ document.getElementById("icon3").addEventListener('click', function() {
   document.getElementById("icon1").addEventListener('click', function() {
     window.location.href = "guess_t_character.html"
   })
+
