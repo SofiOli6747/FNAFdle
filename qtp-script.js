@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Breaker Room';
+const opcaoCorreta = 'Bedroom (FNAF4)';
   
 let opcaoSelecionada = "";
 
@@ -49,7 +49,7 @@ const opcoes = [
 "Fredbear's Family Diner",
 "Galeria Circus",
 "Ballora Gallery",
-"Room (FNAF4)",
+"Bedroom (FNAF4)",
 "Party Room 1",
 "Party Room 2",
 "Party Room 3",
@@ -210,7 +210,7 @@ function enviarOpcao(params) {
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/fnaf places/Captura de tela 2025-04-16 195347.png'
+        document.getElementById('img' + contador).src = 'imagens/fnaf places/Captura de tela 2025-04-21 191437.png'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       

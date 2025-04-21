@@ -289,7 +289,7 @@ function executarComando(params) {
   const txt_r1 = document.getElementById('txt-r1');
   const txt_r2 = document.getElementById('txt-r2');
   
-  const opcaoCorreta = "Like It Or Not";
+  const opcaoCorreta = "You Can't Hide";
   
   let opcaoSelecionada = "";
   
@@ -363,7 +363,9 @@ const opcoes = [
 
 "This Comes From Inside",
 
-"Like It Or Not"
+"Like It Or Not",
+
+"You Can't Hide"
 
 ];
     

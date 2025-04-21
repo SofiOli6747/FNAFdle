@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Candy Cadet';
+const opcaoCorreta = 'Mangle';
   
 let opcaoSelecionada = "";
 
@@ -141,7 +141,7 @@ function mostrarOpcao(tipoBotao) {
     } 
     
     if (contador === 4 && valorSelecionado !== opcaoCorreta) {
-        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/maxresdefault.jpg'
+        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/mangle.png'
         const mangle_js_sound = document.getElementById('mangle_scream');
         mangle_js_sound.play();
         const mangle_js = document.getElementById('mangle');
@@ -155,15 +155,16 @@ function mostrarOpcao(tipoBotao) {
   }
 
 
-const imgs = ['imagens/animatronics_guessthecharacter/maxresdefault.jpg, imagens/animatronics_guessthecharacter/maxresdefault (3).jpg, imagens/animatronics_guessthecharacter/maxresdefault (2).jpg, imagens/animatronics_guessthecharacter/maxresdefault (1).jpg'
-]
+//const imgs = ['imagens/animatronics_guessthecharacter/maxresdefault.jpg, imagens/animatronics_guessthecharacter/maxresdefault (3).jpg, imagens/animatronics_guessthecharacter/maxresdefault (2).jpg, imagens/animatronics_guessthecharacter/maxresdefault (1).jpg'
+//]
+
 function enviarOpcao(params) {
     mostrarOpcao();
   
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/maxresdefault.jpg'
+        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/mangle.png'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       
@@ -173,7 +174,7 @@ function enviarOpcao(params) {
       const yaaay = document.getElementById('yaaay');
       yaaay.play();
     } else {
-        document.getElementById('img' + contador).src = imgs;
+        document.getElementById('img' + contador).style.display = 'none';
     }
   
   }

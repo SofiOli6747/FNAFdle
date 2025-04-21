@@ -40,10 +40,10 @@ body{
     padding: 10px;
     border: solid 3px white;
     font-family: 'fonte3',sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     top: 370px;
-    left: 800px;
+    left: 740px;
     color: aliceblue;
 }
 
@@ -201,9 +201,9 @@ ul{
 
 .resposta{
     font-size: 40px;
-    color: #795a9c;
+    color: #65aad6;
     position: absolute;
-    left: 250px;
+    left: 200px;
     top: 60px;
     font-family: 'fonte2', sans-serif;
 }
