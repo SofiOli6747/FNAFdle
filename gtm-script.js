@@ -289,7 +289,7 @@ function executarComando(params) {
   const txt_r1 = document.getElementById('txt-r1');
   const txt_r2 = document.getElementById('txt-r2');
   
-  const opcaoCorreta = "You Can't Hide";
+  const opcaoCorreta = "Never Be Alone";
   
   let opcaoSelecionada = "";
   
@@ -365,7 +365,9 @@ const opcoes = [
 
 "Like It Or Not",
 
-"You Can't Hide"
+"You Can't Hide",
+
+"Never Be Alone"
 
 ];
     

@@ -16,7 +16,7 @@ setInterval(() => {
 
 
 
-const opcaoCorreta = 'Glamrock Freddy';
+const opcaoCorreta = 'William Afton';
   
 let opcaoSelecionada = "";
 
@@ -24,6 +24,7 @@ function mostrarMenu() {
 
 
 const opcoes = [
+    "William Afton",
     "Freddy Fazbear",
      "Bonnie",
       "Chica", 

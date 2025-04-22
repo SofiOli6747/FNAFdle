@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Bedroom (FNAF4)';
+const opcaoCorreta = 'Party Room 1';
   
 let opcaoSelecionada = "";
 
@@ -210,7 +210,7 @@ function enviarOpcao(params) {
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/fnaf places/Captura de tela 2025-04-21 191437.png'
+        document.getElementById('img' + contador).src = 'imagens/fnaf places/Party_Room_1.webp'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       

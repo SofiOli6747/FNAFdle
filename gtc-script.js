@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Mangle';
+const opcaoCorreta = 'Freddy Fazbear';
   
 let opcaoSelecionada = "";
 
@@ -164,7 +164,7 @@ function enviarOpcao(params) {
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/mangle.png'
+        document.getElementById('img' + contador).src = 'imagens/animatronics_guessthecharacter/FreddyFZB.webp'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       

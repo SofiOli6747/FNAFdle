@@ -43,9 +43,22 @@ body{
     font-size: 13px;
     position: absolute;
     top: 370px;
-    left: 740px;
+    left: 750px;
     color: aliceblue;
 }
+
+.quote2p{
+    padding: 10px;
+    border: solid 3px white;
+    font-family: 'fonte3',sans-serif;
+    font-size: 10px;
+    position: absolute;
+    top: 410px;
+    left: 750px;
+    color: aliceblue;
+}
+
+
 
 .question{
     caret-color: white;
@@ -201,9 +214,9 @@ ul{
 
 .resposta{
     font-size: 40px;
-    color: #65aad6;
+    color: #5f4f7f;
     position: absolute;
-    left: 200px;
+    left: 220px;
     top: 60px;
     font-family: 'fonte2', sans-serif;
 }
