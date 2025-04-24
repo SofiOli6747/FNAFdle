@@ -16,7 +16,7 @@ setInterval(() => {
 
 
 
-const opcaoCorreta = 'William Afton';
+const opcaoCorreta = 'Circus Baby';
   
 let opcaoSelecionada = "";
 

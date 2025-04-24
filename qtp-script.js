@@ -1,6 +1,6 @@
 document = ('Content-Type: application/javascript');
 
-const opcaoCorreta = 'Party Room 1';
+const opcaoCorreta = 'Funtime Auditorium';
   
 let opcaoSelecionada = "";
 
@@ -47,6 +47,7 @@ const opcoes = [
 "Elevator",
 "Fazbear Hills",
 "Fredbear's Family Diner",
+"Funtime Auditorium",
 "Galeria Circus",
 "Ballora Gallery",
 "Bedroom (FNAF4)",
@@ -210,7 +211,7 @@ function enviarOpcao(params) {
     var imagem = document.getElementById('img1')
   
     if (opcaoSelecionada === opcaoCorreta){
-        document.getElementById('img' + contador).src = 'imagens/fnaf places/Party_Room_1.webp'
+        document.getElementById('img' + contador).src = 'imagens/fnaf places/Captura de tela 2025-04-24 195535.png'
 
         document.getElementById("caixa" + contador).style.backgroundColor = 'green';
       
